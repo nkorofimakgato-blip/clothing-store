@@ -1,10 +1,13 @@
 import type { Product } from '../types/product'
+import { useCart } from '../context/CartContext'
 
 interface ProductCardProps {
   product: Product
 }
 
 function ProductCard({ product }: ProductCardProps) {
+  const { addToCart } = useCart()
+
   return (
     <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow p-4 flex flex-col">
       <div className="h-48 flex items-center justify-center mb-4">
@@ -24,7 +27,10 @@ function ProductCard({ product }: ProductCardProps) {
           ${product.price.toFixed(2)}
         </span>
 
-        <button className="bg-gray-900 text-white text-sm px-3 py-1.5 rounded hover:bg-gray-700 transition-colors">
+        <button
+          onClick={() => addToCart(product)}
+          className="bg-gray-900 text-white text-sm px-3 py-1.5 rounded hover:bg-gray-700 transition-colors"
+        >
           Add to Cart
         </button>
       </div>
