@@ -2,10 +2,13 @@ import { useState } from 'react'
 import ProductGrid from './components/ProductGrid'
 import CartButton from './components/CartButton'
 import CartDrawer from './components/CartDrawer'
+import FilterBar from './components/FilterBar'
 import { CartProvider } from './context/CartContext'
 
 function App() {
   const [cartOpen, setCartOpen] = useState(false)
+  const [search, setSearch] = useState('')
+  const [category, setCategory] = useState('all')
 
   return (
     <CartProvider>
@@ -20,7 +23,13 @@ function App() {
         </header>
 
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <ProductGrid />
+          <FilterBar
+            search={search}
+            onSearchChange={setSearch}
+            category={category}
+            onCategoryChange={setCategory}
+          />
+          <ProductGrid search={search} category={category} />
         </main>
 
         <CartDrawer open={cartOpen} onClose={() => setCartOpen(false)} />
