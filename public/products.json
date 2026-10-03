@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Classic Cotton T-Shirt",
+    "price": 24.99,
+    "description": "Soft, breathable cotton tee for everyday wear.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": { "rate": 4.5, "count": 120 }
+  },
+  {
+    "id": 2,
+    "title": "Slim Fit Denim Jacket",
+    "price": 89.99,
+    "description": "Durable denim jacket with a modern slim fit.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
+    "rating": { "rate": 4.2, "count": 88 }
+  },
+  {
+    "id": 3,
+    "title": "Casual Flannel Shirt",
+    "price": 45.50,
+    "description": "Warm flannel shirt, perfect for cooler days.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": { "rate": 4.7, "count": 210 }
+  },
+  {
+    "id": 4,
+    "title": "Waterproof Rain Jacket",
+    "price": 99.00,
+    "description": "Lightweight waterproof jacket for outdoor adventures.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+    "rating": { "rate": 4.0, "count": 65 }
+  },
+  {
+    "id": 5,
+    "title": "Women's Snowboard Jacket",
+    "price": 109.95,
+    "description": "Insulated jacket designed for the slopes.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
+    "rating": { "rate": 4.4, "count": 145 }
+  },
+  {
+    "id": 6,
+    "title": "Leather Moto Jacket",
+    "price": 199.99,
+    "description": "Classic leather biker jacket with a tailored cut.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
+    "rating": { "rate": 4.6, "count": 98 }
+  },
+  {
+    "id": 7,
+    "title": "Rain Defender Jacket",
+    "price": 79.99,
+    "description": "Water-resistant shell with adjustable hood.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
+    "rating": { "rate": 4.1, "count": 75 }
+  },
+  {
+    "id": 8,
+    "title": "Oversized Hoodie",
+    "price": 54.99,
+    "description": "Cozy oversized hoodie with brushed interior.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
+    "rating": { "rate": 4.8, "count": 312 }
+  }
+]

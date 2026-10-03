@@ -11,20 +11,11 @@ function ProductGrid() {
     async function fetchProducts() {
       try {
         setLoading(true)
-
-        const [womenRes, menRes] = await Promise.all([
-          fetch("https://fakestoreapi.com/products/category/women's clothing"),
-          fetch("https://fakestoreapi.com/products/category/men's clothing"),
-        ])
-
-        if (!womenRes.ok || !menRes.ok) {
-          throw new Error('Failed to fetch products')
-        }
-
-        const women: Product[] = await womenRes.json()
-        const men: Product[] = await menRes.json()
-
-        setProducts([...women, ...men])
+const res = await fetch('/products.json')
+if (!res.ok) throw new Error('Failed to fetch products')
+const data: Product[] = await res.json()
+setProducts(data)
+        
       } catch (err) {
         setError(
           err instanceof Error ? err.message : 'Something went wrong'
