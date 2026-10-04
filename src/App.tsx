@@ -12,6 +12,7 @@ function App() {
   const [checkoutOpen, setCheckoutOpen] = useState(false)
   const [search, setSearch] = useState('')
   const [category, setCategory] = useState('all')
+  const [sort, setSort] = useState('featured')
 
   return (
     <CartProvider>
@@ -31,8 +32,14 @@ function App() {
             onSearchChange={setSearch}
             category={category}
             onCategoryChange={setCategory}
+            sort={sort}
+            onSortChange={setSort}
           />
-          <ProductGrid search={search} category={category} />
+          <ProductGrid
+            search={search}
+            category={category}
+            sort={sort}
+          />
         </main>
 
         <Footer />

@@ -5,9 +5,10 @@ import ProductCard from './ProductCard'
 interface ProductGridProps {
   search: string
   category: string
+  sort: string
 }
 
-function ProductGrid({ search, category }: ProductGridProps) {
+function ProductGrid({ search, category, sort }: ProductGridProps) {
   const [products, setProducts] = useState<Product[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -33,14 +34,26 @@ function ProductGrid({ search, category }: ProductGridProps) {
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase()
-    return products.filter((p) => {
-      const matchesSearch =
-        q === '' || p.title.toLowerCase().includes(q)
+    const list = products.filter((p) => {
+      const matchesSearch = q === '' || p.title.toLowerCase().includes(q)
       const matchesCategory =
         category === 'all' || p.category === category
       return matchesSearch && matchesCategory
     })
-  }, [products, search, category])
+
+    switch (sort) {
+      case 'price-asc':
+        return [...list].sort((a, b) => a.price - b.price)
+      case 'price-desc':
+        return [...list].sort((a, b) => b.price - a.price)
+      case 'name-asc':
+        return [...list].sort((a, b) =>
+          a.title.localeCompare(b.title)
+        )
+      default:
+        return list
+    }
+  }, [products, search, category, sort])
 
   if (loading) {
     return (
@@ -64,7 +77,7 @@ function ProductGrid({ search, category }: ProductGridProps) {
       <div className="text-center py-20">
         <p className="text-red-600 font-medium">Error: {error}</p>
         <p className="text-gray-500 text-sm mt-2">
-          Check your internet connection and try again.
+          Try refreshing the page.
         </p>
       </div>
     )
