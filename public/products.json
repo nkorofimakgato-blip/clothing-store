@@ -1,39 +1,39 @@
 [
   {
     "id": 1,
-    "title": "White Strapless Midi Dress",
+    "title": "mamas",
     "price": 89.99,
     "description": "Elegant white strapless midi dress with a subtle ruched texture. Perfect for summer evenings.",
     "category": "women's clothing",
     "image": "/products/white-dress.jpg",
-    "rating": { "rate": 4.7, "count": 142 }
+    "rating": { "rate": 4.7, "count": 1 }
   },
   {
     "id": 2,
-    "title": "Leopard Print Bodycon Dress",
-    "price": 64.99,
-    "description": "Bold leopard print bodycon dress with a flattering V-neckline. Effortless day-to-night style.",
-    "category": "women's clothing",
-    "image": "/products/leopard-dress.jpg",
+    "title": "cisco certified network associate",
+    "price": 400.00,
+    "description": "aquired the cisco certified network associate certification on the 14th of september 2026",
+    "category": "self taught",
+    "image": "/products/ccna.png",
     "rating": { "rate": 4.5, "count": 98 }
   },
   {
     "id": 3,
-    "title": "Sage Green Maxi Dress",
-    "price": 79.99,
-    "description": "Flowing sage green maxi dress with side slit. Breathable fabric for warm days.",
-    "category": "women's clothing",
+    "title": "education",
+    "price": 1000.00,
+    "description": "computer science degree from the tshawane university of technology (2024-2028)",
+    "category": "information communication technology",
     "image": "/products/sage-dress.jpg",
-    "rating": { "rate": 4.6, "count": 187 }
+    "rating": { "rate": 4.6, "count": 4  }
   },
   {
     "id": 4,
-    "title": "Blue Floral Ruffle Blouse",
+    "title": "hobby",
     "price": 42.50,
-    "description": "Romantic blue floral blouse with ruffle collar. A soft, feminine statement piece.",
-    "category": "women's clothing",
-    "image": "/products/blue-blouse.jpg",
-    "rating": { "rate": 4.4, "count": 76 }
+    "description": "i spend most of my time at the gym, i also enjoy reading books and playing chess",
+    "category": "free time",
+    "image": "/products/black ninja.jpg",
+    "rating": { "rate": 4.4, "count": 7 }
   },
   {
     "id": 5,
@@ -64,7 +64,7 @@
   },
   {
     "id": 8,
-    "title": "Graphic Oversized Tee",
+    "title": "wa .fire le fire",
     "price": 44.99,
     "description": "Oversized graphic tee with a bold back print. Streetwear comfort, everyday style.",
     "category": "men's clothing",

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import type { Product } from '../types/product'
 import { useCart } from '../context/CartContext'
 
@@ -8,13 +9,22 @@ interface ProductCardProps {
 function ProductCard({ product }: ProductCardProps) {
   const { addToCart } = useCart()
 
+  function handleAddToCart(e: React.MouseEvent) {
+    e.preventDefault()
+    e.stopPropagation()
+    addToCart(product)
+  }
+
   return (
-    <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col">
+    <Link
+      to={`/product/${product.id}`}
+      className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col group"
+    >
       <div className="aspect-square bg-gray-100 overflow-hidden">
         <img
           src={product.image}
           alt={product.title}
-          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
       </div>
 
@@ -29,14 +39,14 @@ function ProductCard({ product }: ProductCardProps) {
           </span>
 
           <button
-            onClick={() => addToCart(product)}
+            onClick={handleAddToCart}
             className="bg-gray-900 text-white text-sm px-3 py-1.5 rounded hover:bg-gray-700 transition-colors"
           >
             Add to Cart
           </button>
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
 
