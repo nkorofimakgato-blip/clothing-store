@@ -16,6 +16,7 @@ interface CartContextValue {
   addToCart: (product: Product) => void
   removeFromCart: (id: number) => void
   updateQuantity: (id: number, quantity: number) => void
+  clearCart: () => void
   totalItems: number
   totalPrice: number
 }
@@ -66,6 +67,10 @@ export function CartProvider({ children }: { children: ReactNode }) {
     )
   }
 
+  function clearCart() {
+    setItems([])
+  }
+
   const totalItems = items.reduce((sum, item) => sum + item.quantity, 0)
   const totalPrice = items.reduce(
     (sum, item) => sum + item.price * item.quantity,
@@ -79,6 +84,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
         addToCart,
         removeFromCart,
         updateQuantity,
+        clearCart,
         totalItems,
         totalPrice,
       }}

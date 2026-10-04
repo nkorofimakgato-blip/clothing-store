@@ -3,9 +3,10 @@ import { useCart } from '../context/CartContext'
 interface CartDrawerProps {
   open: boolean
   onClose: () => void
+  onCheckout: () => void
 }
 
-function CartDrawer({ open, onClose }: CartDrawerProps) {
+function CartDrawer({ open, onClose, onCheckout }: CartDrawerProps) {
   const { items, removeFromCart, updateQuantity, totalPrice, totalItems } =
     useCart()
 
@@ -94,9 +95,12 @@ function CartDrawer({ open, onClose }: CartDrawerProps) {
               <span>Total</span>
               <span>${totalPrice.toFixed(2)}</span>
             </div>
-            <button className="w-full bg-gray-900 text-white py-3 rounded hover:bg-gray-700 transition-colors">
-              Checkout
-            </button>
+           <button
+  onClick={onCheckout}
+  className="w-full bg-gray-900 text-white py-3 rounded hover:bg-gray-700 transition-colors"
+>
+  Checkout
+</button>
           </div>
         )}
       </aside>

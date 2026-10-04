@@ -3,10 +3,12 @@ import ProductGrid from './components/ProductGrid'
 import CartButton from './components/CartButton'
 import CartDrawer from './components/CartDrawer'
 import FilterBar from './components/FilterBar'
+import Checkout from './components/Checkout'
 import { CartProvider } from './context/CartContext'
 
 function App() {
   const [cartOpen, setCartOpen] = useState(false)
+  const [checkoutOpen, setCheckoutOpen] = useState(false)
   const [search, setSearch] = useState('')
   const [category, setCategory] = useState('all')
 
@@ -32,7 +34,18 @@ function App() {
           <ProductGrid search={search} category={category} />
         </main>
 
-        <CartDrawer open={cartOpen} onClose={() => setCartOpen(false)} />
+        <CartDrawer
+          open={cartOpen}
+          onClose={() => setCartOpen(false)}
+          onCheckout={() => {
+            setCartOpen(false)
+            setCheckoutOpen(true)
+          }}
+        />
+
+        {checkoutOpen && (
+          <Checkout onClose={() => setCheckoutOpen(false)} />
+        )}
       </div>
     </CartProvider>
   )
