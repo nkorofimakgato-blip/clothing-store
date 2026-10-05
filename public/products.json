@@ -46,20 +46,20 @@
   },
   {
     "id": 6,
-    "title": "Striped Long-Sleeve Top",
+    "title": "people i know",
     "price": 32.99,
     "description": "Relaxed-fit striped long-sleeve top. Layer it or wear it on its own.",
     "category": "women's clothing",
-    "image": "/products/striped-top-2.jpg",
+    "image": "/products/drake-tee.jpg",
     "rating": { "rate": 4.2, "count": 65 }
   },
   {
     "id": 7,
-    "title": "people i know",
+    "title": "Black Leather Biker Jacket",
     "price": 189.99,
-    "description": "people i know form my school",
+    "description": "Timeless black leather jacket with a tailored cut. A wardrobe investment piece.",
     "category": "women's clothing",
-    "image": "/products/sage-dress.jpg",
+    "image": "/products/leather-jacket.jpg",
     "rating": { "rate": 4.8, "count": 154 }
   },
   {
