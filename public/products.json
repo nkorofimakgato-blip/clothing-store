@@ -3,15 +3,15 @@
     "id": 1,
     "title": "mamas",
     "price": 89.99,
-    "description": "Elegant white strapless midi dress with a subtle ruched texture. Perfect for summer evenings.",
-    "category": "women's clothing",
-    "image": "/products/white-dress.jpg",
-    "rating": { "rate": 4.7, "count": 1 }
+    "description": "ellegant jean jacket with a classic fit. Perfect for layering over any outfit.",
+    "category": "men's clothing",
+    "image": "/products/me.jpg",
+    "rating": { "rate": 4.7, "count": 120 }
   },
   {
     "id": 2,
     "title": "cisco certified network associate",
-    "price": 400.00,
+    "price": 300.00,
     "description": "aquired the cisco certified network associate certification on the 14th of september 2026",
     "category": "self taught",
     "image": "/products/ccna.png",
@@ -19,29 +19,29 @@
   },
   {
     "id": 3,
-    "title": "education",
-    "price": 1000.00,
-    "description": "computer science degree from the tshawane university of technology (2024-2028)",
-    "category": "information communication technology",
-    "image": "/products/sage-dress.jpg",
+    "title": "white long-sleeve slim fit t-shirt",
+    "price": 20.99,
+    "description": "100% cotton long-sleeve t-shirt with a slim fit. A versatile wardrobe essential.",
+    "category": "men's clothing",
+    "image": "/products/white-tshirt.jpg",
     "rating": { "rate": 4.6, "count": 4  }
   },
   {
     "id": 4,
-    "title": "hobby",
+    "title": "white long dress",
     "price": 42.50,
-    "description": "i spend most of my time at the gym, i also enjoy reading books and playing chess",
-    "category": "free time",
-    "image": "/products/black ninja.jpg",
+    "description": "long white dress with a flowing silhouette. Perfect for summer events or casual outings.",
+    "category": "women's clothing",
+    "image": "/products/white-dress.jpg",
     "rating": { "rate": 4.4, "count": 7 }
   },
   {
     "id": 5,
-    "title": "Striped Crop Top",
+    "title": "yellow vest",
     "price": 34.99,
-    "description": "Classic black-and-white striped crop top with long sleeves. Easy everyday staple.",
+    "description": "Classic yellow vest with a relaxed fit. A versatile wardrobe essential.",
     "category": "women's clothing",
-    "image": "/products/striped-top.jpg",
+    "image": "/products/yellow-vest.jpg",
     "rating": { "rate": 4.3, "count": 210 }
   },
   {
