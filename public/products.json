@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "mamas",
+    "title": "jean jacket",
     "price": 89.99,
     "description": "ellegant jean jacket with a classic fit. Perfect for layering over any outfit.",
     "category": "men's clothing",
@@ -55,19 +55,19 @@
   },
   {
     "id": 7,
-    "title": "Black Leather Biker Jacket",
+    "title": "people i know",
     "price": 189.99,
-    "description": "Timeless black leather jacket with a tailored cut. A wardrobe investment piece.",
+    "description": "people i know form my school",
     "category": "women's clothing",
-    "image": "/products/leather-jacket.jpg",
+    "image": "/products/sage-dress.jpg",
     "rating": { "rate": 4.8, "count": 154 }
   },
   {
     "id": 8,
-    "title": "wa .fire le fire",
+    "title": "Leopard Print Body Suit",
     "price": 44.99,
-    "description": "Oversized graphic tee with a bold back print. Streetwear comfort, everyday style.",
-    "category": "men's clothing",
+    "description": "Stylish leopard print body suit with a fitted silhouette. Perfect for making a statement.",
+    "category": "women's clothing",
     "image": "/products/drake-tee.jpg",
     "rating": { "rate": 4.6, "count": 231 }
   }
