@@ -5,17 +5,8 @@
     "price": 89.99,
     "description": "ellegant jean jacket with a classic fit. Perfect for layering over any outfit.",
     "category": "men's clothing",
-    "image": "/products/me.jpg",
+    "image": "/products/jean-jacket.jpg",
     "rating": { "rate": 4.7, "count": 120 }
-  },
-  {
-    "id": 2,
-    "title": "cisco certified network associate",
-    "price": 300.00,
-    "description": "aquired the cisco certified network associate certification on the 14th of september 2026",
-    "category": "self taught",
-    "image": "/products/ccna.png",
-    "rating": { "rate": 4.5, "count": 98 }
   },
   {
     "id": 3,
@@ -43,15 +34,6 @@
     "category": "women's clothing",
     "image": "/products/yellow-vest.jpg",
     "rating": { "rate": 4.3, "count": 210 }
-  },
-  {
-    "id": 6,
-    "title": "people i know",
-    "price": 32.99,
-    "description": "peolpe i know from my school",
-    "category": "women's clothing",
-    "image": "/products/sage-dress.jpg",
-    "rating": { "rate": 4.2, "count": 65 }
   },
   {
     "id": 7,
